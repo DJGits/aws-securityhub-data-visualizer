@@ -23,6 +23,6 @@ Power BI sample report
 ![](images/PowerBI-SecurityHub-Visualizer_Page_2.png)
 
 Excel sample report
-![](images/SecurityHub-Summary.PNG)
-![](images/SecurityHub-Analyze.PNG)
-![](images/SecurityHub-All-Findings.PNG)
+![](images/SecurityHub-Summary.png)
+![](images/SecurityHub-Analyze.png)
+![](images/SecurityHub-All-Findings.png)
