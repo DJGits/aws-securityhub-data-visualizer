@@ -55,6 +55,514 @@
                 "Status": "NOTIFIED"
             },
             "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:123456789013:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.3/finding/dd7a5aa5-3bad-452d-ad73-EXAMPLE11112",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/S3.3",
+            "AwsAccountId": "123456789013",
+            "Types": [
+                "Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"
+            ],
+            "FirstObservedAt": "2020-09-11T16:32:38.344Z",
+            "LastObservedAt": "2020-10-06T16:18:00.903Z",
+            "CreatedAt": "2020-09-11T16:32:38.344Z",
+            "UpdatedAt": "2020-10-06T16:17:59.735Z",
+            "Severity": {
+                "Product": 0,
+                "Label": "INFORMATIONAL",
+                "Normalized": 0
+            },
+            "Title": "S3.3 S3 buckets should prohibit public write access",
+            "Description": "This AWS control checks whether your S3 buckets allow public write access by evaluating the Block Public Access settings, the bucket policy, and the bucket access control list (ACL).",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "For directions on how to fix this issue, please consult the AWS Security Hub Foundational Security Best Practices documentation.",
+                    "Url": "https://docs.aws.amazon.com/console/securityhub/S3.3/remediation"
+                }
+            },
+            "ProductFields": {
+                "StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+                "StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:123456789013:subscription/aws-foundational-security-best-practices/v/1.0.0",
+                "ControlId": "S3.3",
+                "RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/S3.3/remediation",
+                "RelatedAWSResources:0/name": "securityhub-s3-bucket-public-write-prohibited-a8e809d5",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "StandardsControlArn": "arn:aws:securityhub:us-east-1:123456789013:control/aws-foundational-security-best-practices/v/1.0.0/S3.3",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:123456789013:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.3/finding/dd7a5aa5-3bad-452d-ad73-99c3f27e5d0f"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsS3Bucket",
+                    "Id": "arn:aws:s3:::stackset-examplebucket-buildartifactsbucket-kso210aks92l1",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Details": {
+                        "AwsS3Bucket": {
+                            "OwnerId": "a5133ef9a035727f2kjsl9c3def63a88888e642ebea73695f184974315b8937"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "PASSED"
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "RESOLVED"
+            },
+            "RecordState": "ACTIVE"
+        },
+		{
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:123456789014:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/3a5c3a9d-2019-4073-8b7d-fd77c9d6d91d",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+            "AwsAccountId": "123456789014",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"
+            ],
+            "FirstObservedAt": "2020-09-22T18:35:59.045Z",
+            "LastObservedAt": "2020-10-06T17:01:49.328Z",
+            "CreatedAt": "2020-09-22T18:35:59.045Z",
+            "UpdatedAt": "2020-10-06T17:01:47.761Z",
+            "Severity": {
+                "Product": 0,
+                "Label": "INFORMATIONAL",
+                "Normalized": 0
+            },
+            "Title": "Lambda.1 Lambda functions should prohibit public access by other accounts",
+            "Description": "This AWS control checks whether the Lambda function resource based policy prohibits public access outside of your account.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "For directions on how to fix this issue, please consult the AWS Security Hub Foundational Security Best Practices documentation.",
+                    "Url": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation"
+                }
+            },
+            "ProductFields": {
+                "StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+                "StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:123456789014:subscription/aws-foundational-security-best-practices/v/1.0.0",
+                "ControlId": "Lambda.1",
+                "RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation",
+                "RelatedAWSResources:0/name": "securityhub-lambda-function-public-access-prohibited-bc1628a6",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "StandardsControlArn": "arn:aws:securityhub:us-east-1:123456789014:control/aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:123456789014:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/3a5c3a9d-2019-4073-8b7d-fd77c9d6d91d"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsLambdaFunction",
+                    "Id": "arn:aws:lambda:us-east-1:123456789014:function:lambda-example-function",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Details": {
+                        "AwsLambdaFunction": {
+                            "CodeSha256": "cNl0BB/8qmEAOMCffdSowfY0WeAIWRZtc9s8bsieSFM=",
+                            "FunctionName": "lambda-example-function",
+                            "Handler": "lambda/example.handler",
+                            "LastModified": "2020-10-05T20:10:39.866Z",
+                            "Layers": [
+                                {
+                                    "Arn": "arn:aws:lambda:us-east-1:123456789014:layer:example-lambda-dev-python-requirements:16",
+                                    "CodeSize": 87454
+                                }
+                            ],
+                            "MemorySize": 128,
+                            "RevisionId": "32ffa2d5-8949-4e62-b8d2-dd540b246c98",
+                            "Role": "arn:aws:iam::123456789014:role/LambdaExampleRole",
+                            "Runtime": "python3.6",
+                            "Timeout": 30,
+                            "TracingConfig": {
+                                "Mode": "PassThrough"
+                            },
+                            "Version": "$LATEST"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "PASSED"
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "RESOLVED"
+            },
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "inspector/us-east-1/123456789015/6c4b8f940c535a7621f3c9a3d77b21a663c94791",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/inspector",
+            "GeneratorId": "arn:aws:inspector:us-east-1:123456789015:rulespackage/0-PmNV0Tcd",
+            "AwsAccountId": "123456789015",
+            "Types": [
+                "Software and Configuration Checks/AWS Security Best Practices/Network Reachability - Recognized port reachable from internet"
+            ],
+            "CreatedAt": "2020-08-20T17:45:33.064Z",
+            "UpdatedAt": "2020-09-09T17:14:25.511Z",
+            "Severity": {
+                "Label": "MEDIUM",
+                "Normalized": 40
+            },
+            "Confidence": 10,
+            "Title": "On instance i-024c0aee4abac32c1, UDP port 445 which is associated with 'SMB' is reachable from the internet",
+            "Description": "On this instance, UDP port 445, which is associated with SMB, is reachable from the internet. You can install the Inspector agent on this instance and re-run the assessment to check for any process listening on this port. The instance i-024c0aee4abac32c1 is located in VPC vpc-09c2f415b63c5be01 and has an attached ENI eni-0e1bdcfbdafe507be which uses network ACL acl-0e2c7399fc316eba1. The port is reachable from the internet through Security Group sg-0a6904d17eef62a31 and IGW igw-07f352cdb995840b9",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "You can edit the Security Group sg-0a6904d17eef62a31 to remove access from the internet on port 445"
+                }
+            },
+            "ProductFields": {
+                "attributes/VPC": "vpc-lkjhgfdsa98345zxc",
+                "aws/inspector/id": "Recognized port reachable from internet",
+                "serviceAttributes/schemaVersion": "1",
+                "aws/inspector/arn": "arn:aws:inspector:us-east-1:123456789015:target/0-whwOmfrp/template/0-uAbU09bj/run/0-pBV30aOO/finding/0-jxShEO9d",
+                "attributes/ACL": "acl-lkjhgfdsa98345zxc",
+                "serviceAttributes/assessmentRunArn": "arn:aws:inspector:us-east-1:123456789015:target/0-whwOmfrp/template/0-uAbU09bj/run/0-pBV30aOO",
+                "attributes/PROTOCOL": "UDP",
+                "attributes/RULE_TYPE": "RecognizedPortNoAgent",
+                "aws/inspector/RulesPackageName": "Network Reachability",
+                "attributes/INSTANCE_ID": "i-lkjhgfdsa98345zxc",
+                "attributes/PORT_GROUP_NAME": "SMB",
+                "attributes/IGW": "igw-lkjhgfdsa98345zxc",
+                "serviceAttributes/rulesPackageArn": "arn:aws:inspector:us-east-1:123456789015:rulespackage/0-PmNV0Tcd",
+                "attributes/SECURITY_GROUP": "sg-0a6904d17eef62a31",
+                "attributes/ENI": "eni-lkjhgfdsa98345zxc",
+                "attributes/REACHABILITY_TYPE": "Internet",
+                "attributes/PORT": "445",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/inspector/inspector/us-east-1/123456789015/6c4b8f940c535a7621f3c9a3d77b21a663c94791",
+                "aws/securityhub/ProductName": "Inspector",
+                "aws/securityhub/CompanyName": "Amazon"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsEc2Instance",
+                    "Id": "arn:aws:ec2:us-east-1:123456789015:instance/i-lkjhgfdsa98345zxc",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Tags": {
+                        "aws:cloudformation:stack-name": "example-stack-dev",
+                        "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:123456789015:stack/example-stack-dev/d4599930-d6a7-11da-9448-0e63625d1f0e",
+                        "STAGE": "dev",
+                        "aws:cloudformation:logical-id": "EC2Instance",
+                        "Name": "EC2-Instance-A"
+                    },
+                    "Details": {
+                        "AwsEc2Instance": {
+                            "ImageId": "ami-lkjhgfdsa98345zxc",
+                            "IpV4Addresses": [
+                                "x.x.x.x"
+                            ],
+                            "VpcId": "vpc-lkjhgfdsa98345zxc",
+                            "SubnetId": "subnet-lkjhgfdsa98345zxc"
+                        }
+                    }
+                }
+            ],
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:123456789016:subscription/cis-aws-foundations-benchmark/v/1.2.0/4.2/finding/656d1a73-3111-4632-bcf2-48e7191930f7",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "GeneratorId": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0/rule/4.2",
+            "AwsAccountId": "123456789016",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards/CIS AWS Foundations Benchmark"
+            ],
+            "FirstObservedAt": "2020-08-24T21:18:58.047Z",
+            "LastObservedAt": "2020-10-06T04:06:51.940Z",
+            "CreatedAt": "2020-08-24T21:18:58.047Z",
+            "UpdatedAt": "2020-10-06T04:06:50.133Z",
+            "Severity": {
+                "Product": 0,
+                "Label": "INFORMATIONAL",
+                "Normalized": 0
+            },
+            "Title": "4.2 Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389",
+            "Description": "Security groups provide stateful filtering of ingress/egress network traffic to AWS resources. It is recommended that no security group allows unrestricted ingress access to port 3389 .",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "For directions on how to fix this issue, please consult the AWS Security Hub CIS documentation.",
+                    "Url": "https://docs.aws.amazon.com/console/securityhub/standards-cis-4.2/remediation"
+                }
+            },
+            "ProductFields": {
+                "StandardsGuideArn": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0",
+                "StandardsGuideSubscriptionArn": "arn:aws:securityhub:us-east-1:123456789016:subscription/cis-aws-foundations-benchmark/v/1.2.0",
+                "RuleId": "4.2",
+                "RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/standards-cis-4.2/remediation",
+                "RelatedAWSResources:0/name": "securityhub-restricted-rdp-618d9f31",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "StandardsControlArn": "arn:aws:securityhub:us-east-1:123456789016:control/cis-aws-foundations-benchmark/v/1.2.0/4.2",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:123456789016:subscription/cis-aws-foundations-benchmark/v/1.2.0/4.2/finding/656d1a73-3111-4632-bcf2-48e7191930f7"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsEc2SecurityGroup",
+                    "Id": "arn:aws:ec2:us-east-1:123456789016:security-group/sg-lkjhgfdsa98345zxc",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Details": {
+                        "AwsEc2SecurityGroup": {
+                            "GroupName": "Red Hat Enterprise Linux Server 7-8 -Maipo--RHEL-7-8-20200506-10GiB-AutogenByAWSMP-",
+                            "GroupId": "sg-lkjhgfdsa98345zxc",
+                            "OwnerId": "123456789016",
+                            "VpcId": "vpc-lkjhgfdsa98345zxc",
+                            "IpPermissions": [
+                                {
+                                    "IpProtocol": "tcp",
+                                    "FromPort": 22,
+                                    "ToPort": 22,
+                                    "IpRanges": [
+                                        {
+                                            "CidrIp": "0.0.0.0/0"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "IpPermissionsEgress": [
+                                {
+                                    "IpProtocol": "-1",
+                                    "IpRanges": [
+                                        {
+                                            "CidrIp": "0.0.0.0/0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "PASSED"
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "RESOLVED"
+            },
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:123456789016:subscription/aws-foundational-security-best-practices/v/1.0.0/EC2.3/finding/c78d2647-5ded-4675-bdb5-a86051431709",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/EC2.3",
+            "AwsAccountId": "123456789016",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"
+            ],
+            "FirstObservedAt": "2020-09-22T16:01:09.626Z",
+            "LastObservedAt": "2020-10-06T04:06:48.057Z",
+            "CreatedAt": "2020-09-22T16:01:09.626Z",
+            "UpdatedAt": "2020-10-06T04:06:47.034Z",
+            "Severity": {
+                "Product": 0,
+                "Label": "INFORMATIONAL",
+                "Normalized": 0
+            },
+            "Title": "EC2.3 Attached EBS volumes should be encrypted at-rest",
+            "Description": "This AWS control checks whether the EBS volumes that are in an attached state are encrypted.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "For directions on how to fix this issue, please consult the AWS Security Hub Foundational Security Best Practices documentation.",
+                    "Url": "https://docs.aws.amazon.com/console/securityhub/EC2.3/remediation"
+                }
+            },
+            "ProductFields": {
+                "StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+                "StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:123456789016:subscription/aws-foundational-security-best-practices/v/1.0.0",
+                "ControlId": "EC2.3",
+                "RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/EC2.3/remediation",
+                "RelatedAWSResources:0/name": "securityhub-encrypted-volumes-109d159a",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "StandardsControlArn": "arn:aws:securityhub:us-east-1:123456789016:control/aws-foundational-security-best-practices/v/1.0.0/EC2.3",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:123456789016:subscription/aws-foundational-security-best-practices/v/1.0.0/EC2.3/finding/c78d2647-5ded-4675-bdb5-a86051431709"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsEc2Volume",
+                    "Id": "arn:aws:ec2:us-east-1:123456789016:volume/vol-lkjhgfdsa98345zxc",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Details": {}
+                }
+            ],
+            "Compliance": {
+                "Status": "PASSED"
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "RESOLVED"
+            },
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:guardduty:us-east-1:123456789016:detector/lkjhgfdsa98345zxc/finding/lkjhgfdsa98345zxc",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/guardduty",
+            "GeneratorId": "arn:aws:guardduty:us-east-1:123456789016:detector/lkjhgfdsa98345zxc",
+            "AwsAccountId": "123456789016",
+            "Types": [
+                "Software and Configuration Checks/Policy:S3.BucketBlockPublicAccessDisabled"
+            ],
+            "FirstObservedAt": "2020-08-21T18:47:37Z",
+            "LastObservedAt": "2020-09-03T15:09:54Z",
+            "CreatedAt": "2020-08-21T18:57:59.095Z",
+            "UpdatedAt": "2020-09-03T15:24:58.686Z",
+            "Severity": {
+                "Product": 2,
+                "Label": "LOW",
+                "Normalized": 20
+            },
+            "Title": "Amazon S3 Block Public Access was disabled for S3 bucket aws-pca-revocation-crl-123456789016.",
+            "Description": "Amazon S3 Block Public Access was disabled for S3 bucket aws-pca-revocation-crl-123456789016 by AWSControlTowerExecution calling PutBucketPublicAccessBlock. If this behavior is not expected, it may indicate a configuration mistake or that your credentials are compromised.",
+            "SourceUrl": "https://us-east-1.console.aws.amazon.com/guardduty/home?region=us-east-1#/findings?macros=current&fId=lkjhgfdsa98345zxc",
+            "ProductFields": {
+                "aws/guardduty/service/archived": "false",
+                "aws/guardduty/service/action/awsApiCallAction/remoteIpDetails/organization/asnOrg": "UNKNOWN",
+                "aws/guardduty/service/action/awsApiCallAction/remoteIpDetails/organization/org": "UNKNOWN",
+                "aws/guardduty/service/additionalInfo": "",
+                "aws/guardduty/service/resourceRole": "TARGET",
+                "aws/guardduty/service/action/awsApiCallAction/remoteIpDetails/organization/isp": "UNKNOWN",
+                "aws/guardduty/service/action/awsApiCallAction/remoteIpDetails/geoLocation/lat": "0.0",
+                "aws/guardduty/service/count": "2",
+                "aws/guardduty/service/action/awsApiCallAction/remoteIpDetails/ipAddressV4": "x.x.x.x",
+                "aws/guardduty/service/action/awsApiCallAction/remoteIpDetails/country/countryName": "",
+                "aws/guardduty/service/action/awsApiCallAction/callerType": "Remote IP",
+                "aws/guardduty/service/action/awsApiCallAction/serviceName": "s3.amazonaws.com",
+                "aws/guardduty/service/action/awsApiCallAction/remoteIpDetails/city/cityName": "UNKNOWN",
+                "aws/guardduty/service/action/awsApiCallAction/api": "PutBucketPublicAccessBlock",
+                "aws/guardduty/service/serviceName": "guardduty",
+                "aws/guardduty/service/evidence": "",
+                "aws/guardduty/service/action/awsApiCallAction/remoteIpDetails/geoLocation/lon": "0.0",
+                "aws/guardduty/service/detectorId": "lkjhgfdsa98345zxc",
+                "aws/guardduty/service/action/awsApiCallAction/remoteIpDetails/organization/asn": "0",
+                "aws/guardduty/service/eventFirstSeen": "2020-08-21T18:47:37Z",
+                "aws/guardduty/service/action/awsApiCallAction/affectedResources/AWS::S3::Bucket": "aws-pca-revocation-crl-123456789016",
+                "aws/guardduty/service/eventLastSeen": "2020-09-03T15:09:54Z",
+                "aws/guardduty/service/action/actionType": "AWS_API_CALL",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/guardduty/arn:aws:guardduty:us-east-1:123456789016:detector/lkjhgfdsa98345zxc/finding/lkjhgfdsa98345zxc",
+                "aws/securityhub/ProductName": "GuardDuty",
+                "aws/securityhub/CompanyName": "Amazon"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsIamAccessKey",
+                    "Id": "AWS::IAM::AccessKey:ASIAX9X9X9X9X9X9X9SA",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Details": {
+                        "AwsIamAccessKey": {
+                            "PrincipalId": "AROA4MJ6LKQLJWVYHIRUV:4652ae1f-7db6-4bb1-a87d-c9041ac393ff",
+                            "PrincipalType": "AssumedRole",
+                            "PrincipalName": "AWSControlTowerExecution"
+                        }
+                    }
+                },
+                {
+                    "Type": "AwsS3Bucket",
+                    "Id": "arn:aws:s3:::aws-pca-revocation-crl-123456789016",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Tags": {
+                        "aws:cloudformation:stack-name": "StackSet-example-awsdns-das-9f698a8a-bdf1-4d8a-80a8-3cd1e36a9b95",
+                        "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:123456789016:stack/StackSet-example-awsdns-das-9f698a8a-bdf1-4d8a-80a8-3cd1e36a9b95/7e6e3c00-edf7-11ea-93d4-1261ea05b3bf",
+                        "aws:cloudformation:logical-id": "RevocationCRLS3Bucket"
+                    },
+                    "Details": {
+                        "AwsS3Bucket": {
+                            "OwnerId": "a5133ef9a035727f2kjsl9c3def63a88888e642ebea73695f184974315b8938",
+                            "CreatedAt": "2020-09-03T15:09:53Z"
+                        }
+                    }
+                }
+            ],
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:123456789016:subscription/cis-aws-foundations-benchmark/v/1.2.0/2.8/finding/0d149719-3fa1-411e-9758-62408ab2975a",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "GeneratorId": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0/rule/2.8",
+            "AwsAccountId": "123456789016",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards/CIS AWS Foundations Benchmark"
+            ],
+            "FirstObservedAt": "2020-08-28T05:42:57.279Z",
+            "LastObservedAt": "2020-10-06T15:19:34.665Z",
+            "CreatedAt": "2020-08-28T05:42:57.279Z",
+            "UpdatedAt": "2020-10-06T15:19:33.366Z",
+            "Severity": {
+                "Product": 0,
+                "Label": "INFORMATIONAL",
+                "Normalized": 0
+            },
+            "Title": "2.8 Ensure rotation for customer created CMKs is enabled",
+            "Description": "AWS Key Management Service (KMS) allows customers to rotate the backing key which is key material stored within the KMS which is tied to the key ID of the Customer Created customer master key (CMK). It is the backing key that is used to perform cryptographic operations such as encryption and decryption. It is recommended that CMK key rotation be enabled.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "For directions on how to fix this issue, please consult the AWS Security Hub CIS documentation.",
+                    "Url": "https://docs.aws.amazon.com/console/securityhub/standards-cis-2.8/remediation"
+                }
+            },
+            "ProductFields": {
+                "StandardsGuideArn": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0",
+                "StandardsGuideSubscriptionArn": "arn:aws:securityhub:us-east-1:123456789016:subscription/cis-aws-foundations-benchmark/v/1.2.0",
+                "RuleId": "2.8",
+                "RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/standards-cis-2.8/remediation",
+                "RelatedAWSResources:0/name": "securityhub-cmk-backing-key-rotation-enabled-e1e85e57",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "StandardsControlArn": "arn:aws:securityhub:us-east-1:123456789016:control/cis-aws-foundations-benchmark/v/1.2.0/2.8",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+				"aws/securityhub/annotation": "Amazon GuardDuty is enabled.",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:123456789016:subscription/cis-aws-foundations-benchmark/v/1.2.0/2.8/finding/0d149719-3fa1-411e-9758-62408ab2975a"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsKmsKey",
+                    "Id": "arn:aws:kms:us-east-1:123456789016:key/3434aaf6-3c82-48dc-a25b-3434aaf6",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Details": {
+                        "AwsKmsKey": {
+                            "AWSAccountId": "123456789016",
+                            "CreationDate": 1598557218757,
+                            "KeyId": "3434aaf6-3c82-48dc-a25b-3434aaf6",
+                            "KeyManager": "CUSTOMER",
+                            "KeyState": "Enabled",
+                            "Origin": "AWS_KMS"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "PASSED"
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "RESOLVED"
+            },
+            "RecordState": "ACTIVE"
         }
     ]
 }
