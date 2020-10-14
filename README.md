@@ -14,7 +14,7 @@ aws securityhub get-findings --profile [AWS_PROFILE]  > c:\temp\SecurityHub-Find
 ```
 
 
-### Security Hub Findings
+### Visualize Findings
 Launch the Power BI template, click on refresh to load the latest JSON findings. 
 For excel template, go to Data tab & Refresh All for all the tabs starting with Findings tab first.
 
